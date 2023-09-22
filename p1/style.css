@@ -10,8 +10,9 @@ div#diagram {
 }
 
 img {
-  margin: 50px;
-  border: 2px black;
+  margin: 30px;
+  padding: 10px;
+  border: 2px solid black;
   width: 40vw;
   height: auto;
 }
