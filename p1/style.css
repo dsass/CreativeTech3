@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div#diagram {
+  width: 40vw;
+  height: auto;
+  background-image: url("diagram.png");
+}
+
+img {
+  width: 40vw;
+  height: auto;
+}
