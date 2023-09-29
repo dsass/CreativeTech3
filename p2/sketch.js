@@ -3,6 +3,7 @@ let video;
 let hands = [];
 let sploot = null;
 let closed = false;
+let splats=[];
 
 function setup() {
   createCanvas(640, 480);
@@ -32,6 +33,10 @@ function draw() {
 
   // We can call both functions to draw all keypoints and the skeletons
   drawKeypoints();
+
+  for (let i = 0; i < splats.length; i++) {
+    splats[i].drawSplat();
+  }
 }
 
 // A function to draw ellipses over the detected keypoints
@@ -74,8 +79,9 @@ function drawKeypoints() {
 
       if(sploot == null) {
         sploot = new Splat(mid[0],mid[1], size*0.4);
+        splats.push(sploot);
       }
-      sploot.drawSplat();
+      // sploot.drawSplat();
     } else {
       closed = false;
       textSize(size);
