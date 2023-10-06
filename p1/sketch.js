@@ -107,8 +107,8 @@ class Splat {
     let b = 100;
     let t = 0;
     for (let i = 0; i < 63; i++) {
-      a = -sin(t) * d;
-      b = -cos(t) * d;
+      a = -sin(t) * d + random(-2,2);
+      b = -cos(t) * d + random(-2,2);
       t += 0.1;
       this.verts.push([a, b]);
       this.verts2.push([a+x, b+y]);

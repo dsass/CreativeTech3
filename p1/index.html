@@ -3,6 +3,10 @@
   <head>
     <title>Project 1 – Kludging</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- p5 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.min.js"></script>
+    <!-- ml5 -->
+    <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Inconsolata|Mukta" rel="stylesheet">
     <meta charset="utf-8" />
 
@@ -12,6 +16,29 @@
     <div class="Heading2">✨<a href="https://www.youtube.com/watch?v=lX6JcybgDFo&t=8s">inspiration</a>✨</div>
     <!-- <div id="diagram"></div> -->
     <img src="diagram.png" alt="diagram">
-    <!-- <script src="sketch.js"></script> -->
+
+    <h1>experiments in red</h1>
+    <h3>
+      I started out this project with handpose recognition – 
+      getting ml5 working with a basic hand recognition example. <br>
+      This involved finding key points, triangulating, and figuring
+      out how to pin point the palm. My process dots are shown in yellow:
+    </h3>
+    <img src="process.jpg" alt="process">
+    <h3>
+      I then looked at recognizing other objects. I played around with
+      Teachable Machine, which would only classify whole images without
+      image segmentation, so that wasn't going to work. I tested out the
+      COCOSSD object detector, which had incredibly unreliable results –
+      inconsistency of detection and classification, as well as wonky
+      coordinates that sometimes showed up outside of the object itself:
+    </h3>
+    <img src="process2.jpg" alt="process">
+    <h3>
+      I finally decided to stick with the hands, using perlin noise for
+      a tomato squish that oozes down the screen. Please play around with
+      it below:
+    </h3>
+    <script src="sketch.js" class="script"></script>
   </body>
 </html>
