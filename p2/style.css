@@ -1,0 +1,37 @@
+* {
+  margin: 30px;
+  padding: 0;
+}
+
+div#diagram {
+  width: 40vw;
+  height: auto;
+  /* background-image: url("diagram.png"); */
+}
+
+img {
+  margin: 30px;
+  padding: 10px;
+  border: 2px solid black;
+  width: 100%;
+  height: auto;
+}
+
+img.support {
+  width: 20%;
+}
+
+div.Heading {
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+  font-size: 40px;
+  margin: 20px;
+
+}
+
+div.Heading2 {
+  font-weight: bold;
+  font-family: 'Inconsolata', monospace;
+  font-size: 20px;
+  margin: 20px;
+}
